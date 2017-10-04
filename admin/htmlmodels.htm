@@ -1,0 +1,103 @@
+<HTML><HEAD><TITLE>Willkommen zum Administrationsbereich</TITLE>
+<META http-equiv=content-type content="text/html; charset=ISO-8859-1">
+<STYLE>
+	* {font-family:arial,helvetica; color:white}
+	a {color:white;text-decoration:none;}
+	a:hover {text-decoration:underline;}
+	td {font-size:12px;}
+	img {border:0px;}
+</STYLE>
+
+<SCRIPT language=javascript>
+function check(url, co) {
+	if (co == '') {
+		potw = 'Are you sure?';
+	} else {
+		potw = co;
+	}
+	if (confirm(potw)) {
+		window.location.replace(url);
+	} else {
+		return false;
+	}
+}
+
+noweOkienko = null;
+function popup (plik, w, h) {
+	if(window.screen){
+		aw=screen.availWidth;
+		ah=screen.availHeight;
+	} else {
+		aw=640;
+		ah=480;
+	}
+	if (!w) {w=410;}
+	if (!h) {h=350;}
+	if (noweOkienko) {
+		noweOkienko.close();
+	}
+	noweOkienko = window.open(plik,"Info","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizeable=no, left=" + ((aw-w)/2) + ", top=" + ((ah-h)/2) + "," + "screenX=" + ((aw-w)/2) + "," + "screenY= " + ((ah-h)/2) + ", width="+w+", height="+h);
+	noweOkienko.focus();
+}
+
+</SCRIPT>
+</HEAD>
+<BODY style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #2a2a2a">
+<DIV id=overDiv style="Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute"></DIV>
+<TABLE style="BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-BOTTOM: gray 1px solid" cellSpacing=0 cellPadding=0 width="100%" bgColor=#444444>
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: 10px" align=right><B>MENU:</B> | <A href="models.php">models</A> | <A style="COLOR: orange" href="login.php?logout">logout</A> | </TD></TR></TBODY></TABLE><BR><BR>
+<TABLE width=790 align=center border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=670><SPAN style="COLOR: gray">Willkommen zum Administrationsbereich<SPAN><BR><BR><BR><A href="addmodel.php">ADD NEW MODEL</A><BR><BR>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=6 height=46><IMG height=46 src="gfx/bar1.gif" width=6></TD>
+<TD style="BACKGROUND-IMAGE: url(gfx/bar2.gif); BACKGROUND-REPEAT: repeat-x">
+<DIV style="MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px"><B>People's division</B></DIV></TD>
+<TD width=7 height=46><IMG height=46 src="gfx/bar3.gif" width=7></TD></TR></TBODY></TABLE>SELECT * FROM fg_models WHERE category = 'people' ORDER BY id ; rows 2
+<TABLE width=650 align=center border=0>
+<TBODY>
+<TR>
+<TD><A href="models.php?cat=all&amp;page=1">ALL</A> | <A href="models.php?cat=woman&amp;page=1">WOMEN</A> | <A href="models.php?cat=man&amp;page=1">MEN</A> | <A href="models.php?cat=people&amp;page=1">PEOPLE</A></TD>
+<TD align=right>PAGE: </TD></TR></TBODY></TABLE>
+<br />
+</SPAN></SPAN>
+  <table width="650" border="0" align="center" cellpadding="3" cellspacing="0">
+    
+    <tr>
+      <td width="96" bgcolor="#0c0c0c"><img src="../images/mini/1144758608_mini.jpg" width="96" height="44" /></td>
+      <td bgcolor="#0c0c0c">aaaa</td>
+      <td bgcolor="#0c0c0c">aaaa</td>
+      <td bgcolor="#0c0c0c">aaaa</td>
+      <td width="55" bgcolor="#0c0c0c"><img src="gfx/btn_edit.gif" width="55" height="22" /></td>
+      <td width="62" bgcolor="#0c0c0c"><img src="gfx/btn_delete.gif" width="62" height="22" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#161616"><img src="../images/mini/1144758608_mini.jpg" width="96" height="44" /></td>
+      <td bgcolor="#161616">aaaa</td>
+      <td bgcolor="#161616">aaaa</td>
+      <td bgcolor="#161616">aaaa</td>
+      <td bgcolor="#161616"><img src="gfx/btn_edit.gif" width="55" height="22" /></td>
+      <td bgcolor="#161616"><img src="gfx/btn_delete.gif" width="62" height="22" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#0c0c0c"><img src="../images/mini/1144758608_mini.jpg" width="96" height="44" /></td>
+      <td bgcolor="#0c0c0c">aaaa</td>
+      <td bgcolor="#0c0c0c">aaaa</td>
+      <td bgcolor="#0c0c0c">aaaa</td>
+      <td bgcolor="#0c0c0c"><img src="gfx/btn_edit.gif" width="55" height="22" /></td>
+      <td bgcolor="#0c0c0c"><img src="gfx/btn_delete.gif" width="62" height="22" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#161616"><img src="../images/mini/1144758608_mini.jpg" width="96" height="44" /></td>
+      <td bgcolor="#161616">aaaa</td>
+      <td bgcolor="#161616">aaaa</td>
+      <td bgcolor="#161616">aaaa</td>
+      <td bgcolor="#161616"><img src="gfx/btn_edit.gif" width="55" height="22" /></td>
+      <td bgcolor="#161616"><img src="gfx/btn_delete.gif" width="62" height="22" /></td>
+    </tr>
+  </table></TD></TR></TBODY></TABLE><BR><BR><BR></BODY></HTML>

@@ -1,0 +1,27 @@
+.sortable-list {
+	text-align:left;
+    list-style-type : none;
+    margin : 0px 0px 0px 0px;
+    padding-left: 0px;
+}
+.sortable-list li {
+    border : 1px solid #aaaaaa;
+    cursor : move;
+    margin : 2px 0px 2px 0px;
+    padding : 3px;
+    background : #444444;
+    width : 400px;
+}
+.newsletter {
+font-family:Verdana;
+color:#000000;
+font-size:11px;
+background-color:#FFFFFF;
+}
+.newsletter p,div,b {
+color:#000000;
+}
+.newsletter a {
+color:#333333;
+text-decoration:underline;
+}

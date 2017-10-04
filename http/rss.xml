@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>FOTOGEN new and updated models</title>
+    <link>http://fotogen.ch/</link>
+    <description>New nad updated models from FOTOGEN.CH website</description>
+    <item>
+       <title>model name here</title>
+       <link>http://fotogen.ch/index.php?sc=851</link>
+       <description>added 23123</description>
+    </item>
+    <item>
+       <title>name here</title>
+       <link>http://fotogen.ch/index.php?sc=773</link>
+       <description>added 23123</description>
+    </item>
+  </channel>
+</rss>

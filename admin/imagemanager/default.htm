@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>MCImageManager Example</title>
+<script language="javascript" type="text/javascript" src="jscripts/mcimagemanager.js"></script>
+</head>
+<body>
+
+<h3>Simple example:</h3>
+<form name="example1">
+<input type="text" name="url" value="Select file" size="80">
+<a href="javascript:mcImageManager.open('example1','url');">[MCImageManager]</a>
+</form>
+
+<h3>Advanced example:</h3>
+<form name="example2">
+<input type="text" name="url" value="Select file" size="80" onchange="alert('Value: ' + this.value);" />
+<a href="javascript:mcImageManager.open('example2','url','','',{relative_urls : true});">[MCImageManager]</a>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=ISO-8859-1" />
+<TITLE>Willkommen zum Administrationsbereich</TITLE>
+<style>
+	* {font-family:arial,helvetica; color:white}
+	a {color:white;text-decoration:none;}
+	a:hover {text-decoration:underline;}
+	td {font-size:12px;}
+	img {border:0px;}
+</style>
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+
+<script language="javascript">
+function check(url, co) {
+	if (co == '') {
+		potw = 'Are you sure?';
+	} else {
+		potw = co;
+	}
+	if (confirm(potw)) {
+		window.location.replace(url);
+	} else {
+		return false;
+	}
+}
+
+noweOkienko = null;
+function popup (plik, w, h) {
+	if(window.screen){
+		aw=screen.availWidth;
+		ah=screen.availHeight;
+	} else {
+		aw=640;
+		ah=480;
+	}
+	if (!w) {w=410;}
+	if (!h) {h=350;}
+	if (noweOkienko) {
+		noweOkienko.close();
+	}
+	noweOkienko = window.open(plik,"Info","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizeable=no, left=" + ((aw-w)/2) + ", top=" + ((ah-h)/2) + "," + "screenX=" + ((aw-w)/2) + "," + "screenY= " + ((ah-h)/2) + ", width="+w+", height="+h);
+	noweOkienko.focus();
+}
+
+</script>
+</HEAD>
+<BODY style="margin:0px;padding:0px; background-color:#2a2a2a">
+
+<table width=100% style="border:1px solid gray;" bgcolor=#444444 cellspacing=0 cellpadding=0px><tr>
+<td align=right style="font-size:10px;"><b>MENU:</b>
+| <a href="models.php">models</a>
+| <a href="login.php?logout" style="color:orange;">logout</a> |
+</td></tr></table>
+
+<br><br>
+<table border=0 width=790px align=center>
+<tr><td width=670px valign=top>
+<span style="color:gray;">Willkommen zum Administrationsbereich<span><br><br><br><table width="100%" border=0 cellspacing=0 cellpadding=0><tr><td width=6 height=46><img src="gfx/bar1.gif" width=6 height=46 /></td><td style="background-image:url(gfx/bar2.gif); background-repeat:repeat-x"><div style="margin-left:10px; margin-right:10px; "><b>MODEL ADDED</b></div></td><td width=7 height=46 ><img src="gfx/bar3.gif" width=7 height=46 /></td></tr></table><table border=0 cellpadding=0 cellspacing=0 align=center  style="background-image:url(gfx/i2_bg.gif); background-repeat:repeat-y"><tr><td><img src="gfx/i1.jpg" width=294 height=14 /></td></tr><tr><td style="background-image:url(gfx/i2.jpg); background-repeat:no-repeat; color:#ffffff;" height=34><div style="margin-left:10px; margin-right:10px; text-align:center"><b>MODEL ADDED TO DATABASE</B></div></td></tr><tr><td><img src="gfx/i3.jpg" width=294 height=14 /></td></tr></table><br>
+<table align="center" width="400" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><strong>MODEL INFO:</strong> <br>
+      <br>
+      <br></td>
+    <td><strong>PHOTOS:<br>
+    </strong></td>
+  </tr>
+  <tr>
+    <td>first name: xxx<br>
+      last name: xxx<br>
+      nick name: xxx<br>
+      height: xxx<br>
+      chest: xxx<br>
+      waist: xxx<br>
+      hips: xxx<br>
+      size: xxx<br>
+      shoes: xxx<br>
+      eyes: xxx<br>
+      hair: xxx<br>
+      startpage: yes<br>
+      new face: yes<br>
+      category: <br>
+      man/woman: man<br>
+      national: yes<br>
+      active: yes<br>
+      date entry: xxx<br>
+      changed: xxx
+      <br>
+      <br></td>
+    <td valign="top"><img src="../images/mini/1144758558_mini.jpg" width="96" height="44"><br>
+        <br>
+          ADD MORE PHOTOS</td>
+  </tr>
+</table>
+<br>
+<br>
+<br><table width="100%" border=0 cellspacing=0 cellpadding=0><tr><td width=6 height=46><img src="gfx/bar1.gif" width=6 height=46 /></td><td style="background-image:url(gfx/bar2.gif); background-repeat:repeat-x"><div style="margin-left:10px; margin-right:10px; "><b>ADD NEW MODEL</b></div></td><td width=7 height=46 ><img src="gfx/bar3.gif" width=7 height=46 /></td></tr></table>
+
+
+<form style="margin-left:80px" enctype="multipart/form-data" action="addmodel.php" method="post" name="addModelForm">
+<input name="action" type="hidden" value="addmodel" />
+<table width="500" cellpadding="5" cellspacing="0" border="0">
+  <tr>
+    <td>First Name:</td>
+    <td><input  name="first_name" type="text"  style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px"/></td>
+    <td>&nbsp;</td>
+    <td>Last Name:</td>
+    <td><input  name="last_name" type="text"  style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px"/></td>
+    </tr>
+  <tr>
+    <td>Nick Name: </td>
+    <td><input  name="nick_name" type="text"  style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px"/></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td>Height (cm) :</td>
+    <td><input  name="height" type="text"  style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px"/></td>
+    <td>&nbsp;</td>
+    <td>Chest (cm) : </td>
+    <td><input  name="chest" type="text"  style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px"/></td>
+    </tr>
+  <tr>
+    <td>Waist (cm) : </td>
+    <td><input  name="waist" type="text"  style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px"/></td>
+    <td>&nbsp;</td>
+    <td>Hips (cm) :</td>
+    <td><input  name="hips" type="text"  style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px"/></td>
+  </tr>
+  <tr>
+    <td>Size:</td>
+    <td><input  name="size" type="text"  style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px"/></td>
+    <td>&nbsp;</td>
+    <td>Shoes:</td>
+    <td><input  name="shoes" type="text"  style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px"/></td>
+  </tr>
+  <tr>
+    <td>Eyes:</td>
+    <td>
+      <select name="eyes">
+	  <option style="color:#333333">Choose:</option>
+	  <option style="color:#333333" value="brown">brown</option>
+	  <option style="color:#333333" value="blue">blue</option>
+	  <option style="color:#333333" value="green">green</option>
+      </select>    </td>
+    <td>&nbsp;</td>
+    <td>Hair:</td>
+    <td><select name="hair">
+      <option style="color:#333333">Choose:</option>
+      <option style="color:#333333" value="brown">brown</option>
+      <option style="color:#333333" value="blonde">blonde</option>
+      <option style="color:#333333" value="black">black</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td>Startpage:</td>
+    <td>
+      <input type="checkbox" name="start_page_flag" value="yes"  checked="checked"/>    </td>
+    <td>&nbsp;</td>
+    <td>New Face: </td>
+    <td><input type="checkbox" name="new_face_flag" value="yes"  checked="checked"/></td>
+  </tr>
+  <tr>
+    <td>Sed-card big image </td>
+    <td><input type="checkbox" name="sed_card_big_image_flag" value="yes"  checked="checked"/></td>
+    <td>&nbsp;</td>
+    <td>Category:</td>
+    <td><select name="category">
+      <option style="color:#333333">Choose:</option>
+      <option style="color:#333333" value="woman">woman</option>
+      <option style="color:#333333" value="man">man</option>
+      <option style="color:#333333" value="people">people</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td>Man/Woman:</td>
+    <td><select name="man_woman">
+      <option style="color:#333333">Choose:</option>
+      <option style="color:#333333" value="woman">woman</option>
+      <option style="color:#333333" value="man">man</option>
+    </select></td>
+    <td>&nbsp;</td>
+    <td>National/Intern.</td>
+    <td><select name="national">
+      <option style="color:#333333">Choose:</option>
+      <option style="color:#333333" value="national">national</option>
+      <option style="color:#333333" value="international">international</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td>Active</td>
+    <td><input type="checkbox" name="active" value="yes"  checked="checked"/></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="5" align="center">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="5" align="center">Add Image:&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
+<input name="image_file" type="file" style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px" /></td>
+  </tr>
+  <tr>
+    <td colspan="5" align="center">
+      <input style="color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif" type="submit" name="Submit" value="Submit" />
+    </td>
+  </tr>
+</table>
+
+</form>
+
+
+
+
+</td></tr></table>
+<br><br><br>
+
+</body>
+</html>
