@@ -20,9 +20,11 @@ The other part of the project, also made by me, was the admin panel (php + mysql
 ## Screenshots
 
 Main page
+
 ![screenshot1](/screenshots/s1.jpg "screenshot1")
 
 *****
 
 Main page
+
 ![screenshot1](/screenshots/s1.jpg "screenshot1")
