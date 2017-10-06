@@ -27,4 +27,52 @@ Main page
 
 Main page
 
-![screenshot1](/screenshots/s1.jpg "screenshot1")
+![screenshot2](/screenshots/s2.jpg "screenshot2")
+
+*****
+
+Main page
+
+![screenshot3](/screenshots/s3.jpg "screenshot3")
+
+*****
+
+Main page
+
+![screenshot4](/screenshots/s4.jpg "screenshot4")
+
+*****
+
+Main page
+
+![screenshot5](/screenshots/s5.jpg "screenshot5")
+
+*****
+
+Main page
+
+![screenshot6](/screenshots/s6.jpg "screenshot6")
+
+*****
+
+Main page
+
+![screenshot7](/screenshots/s7.jpg "screenshot7")
+
+*****
+
+Main page
+
+![screenshot8](/screenshots/s8.jpg "screenshot8")
+
+*****
+
+Main page
+
+![screenshot9](/screenshots/s9.jpg "screenshot9")
+
+*****
+
+Main page
+
+![instructions](/screenshots/instructions.jpg "instructions")
