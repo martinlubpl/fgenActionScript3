@@ -1,2 +1,6 @@
 *.as linguist-language=ActionScript
 lib/* linguist-vendored
+admin/datechooser/* linguist-vendored
+admin/imagemanager/* linguist-vendored
+admin/scriptaculous-js-1.6.4/* linguist-vendored
+admin/tiny_mce/* linguist-vendored
